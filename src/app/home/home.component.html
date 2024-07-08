@@ -1,0 +1,55 @@
+<div class="row align-items-center mb-5">
+  <div class="col-md-4">
+    <div class="w-25 custom-border"></div>
+    <h2 class="py-4">Trending <br>Movies <br>To Watch Now </h2>
+    <p class="text-secondary">Trending Movies To Watch Now</p>
+    <div class="w-100 custom-border"></div>
+  </div>
+  <div class="col-md-2 my-2" *ngFor="let movie of allMovies;let i = index">
+    <div class="item position-relative">
+      <img [src]="'https://image.tmdb.org/t/p/w500'+movie.poster_path"
+        class="w-100" alt>
+      <h3 class="h5 text-white mt-2"> {{movie.title}}</h3>
+      <span class="rating bg-info px-1 py-2 top-0 end-0 position-absolute">
+        {{movie.vote_average}}
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="row align-items-center mb-5">
+  <div class="col-md-4">
+    <div class="w-25 custom-border"></div>
+    <h2 class="py-4">Trending <br>TV  <br>To Watch Now </h2>
+    <p class="text-secondary">Trending Tv Movies To Watch Now</p>
+    <div class="w-100 custom-border"></div>
+  </div>
+  <div class="col-md-2" *ngFor="let tv of tvMovies;let i = index">
+    <div class="item position-relative">
+      <img [src]="'https://image.tmdb.org/t/p/w500'+tv.poster_path"
+        class="w-100" alt>
+      <h3 class="h5 text-white mt-2"> {{tv.name}}</h3>
+      <span class="rating bg-info px-1 py-2 top-0 end-0 position-absolute">
+        {{tv.vote_average}}
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="row align-items-center mb-5">
+  <div class="col-md-4">
+    <div class="w-25 custom-border"></div>
+    <h2 class="py-4">Trending <br>People <br>To Watch Now </h2>
+    <p class="text-secondary">Trending People On the Cinema</p>
+    <div class="w-100 custom-border"></div>
+  </div>
+  <div class="col-md-2 my-2" *ngFor="let people of peopleMovies;let i = index">
+    <div class="item">
+      <img [src]="'https://image.tmdb.org/t/p/w500'+people.profile_path"
+        class="w-100" alt>
+      <h3 class="h5 text-white mt-2"> {{people.name}}</h3>
+    </div>
+  </div>
+</div>
