@@ -16,10 +16,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this._homedataService.geTrending("movie").subscribe(res => {
       this.allMovies = res.results.slice(0,10);
-      console.log(this.allMovies);
     })
     this._homedataService.geTrending("tv").subscribe(res => {
       this.tvMovies = res.results.slice(0,10);
+
     })
     this._homedataService.geTrending("person").subscribe(res => {
       this.peopleMovies = res.results.slice(0,10);

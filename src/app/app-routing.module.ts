@@ -6,6 +6,9 @@ import { ContactComponent } from './contact/contact.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { MoviesComponent } from './movies/movies.component';
+import { TvseriesComponent } from './tvseries/tvseries.component';
+import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
 
 const routes: Routes = [
   { path: "", redirectTo: 'home', pathMatch: "full" },
@@ -14,8 +17,10 @@ const routes: Routes = [
   { path: "contact", component: ContactComponent },
   { path: "register", component: RegisterComponent },
   { path: "login", component: LoginComponent },
+  { path: "movies", component: MoviesComponent },
+  { path: "tvseries", component: TvseriesComponent },
+  { path: "moviedetails/:id", component: MoviedetailsComponent },
   { path: "**", component: NotfoundComponent }
-
 ];
 
 @NgModule({

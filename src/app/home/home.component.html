@@ -5,16 +5,16 @@
     <p class="text-secondary">Trending Movies To Watch Now</p>
     <div class="w-100 custom-border"></div>
   </div>
-  <div class="col-md-2 my-2" *ngFor="let movie of allMovies;let i = index">
+  <a [routerLink]= "['/moviedetails', movie.id]" class="col-md-2 my-2 " *ngFor="let movie of allMovies;let i = index">
     <div class="item position-relative">
       <img [src]="'https://image.tmdb.org/t/p/w500'+movie.poster_path"
         class="w-100" alt>
-      <h3 class="h5 text-white mt-2"> {{movie.title}}</h3>
+      <h3 class="h5 mt-2"> {{movie.title}}</h3>
       <span class="rating bg-info px-1 py-2 top-0 end-0 position-absolute">
         {{movie.vote_average}}
       </span>
     </div>
-  </div>
+  </a>
 </div>
 
 
@@ -25,16 +25,16 @@
     <p class="text-secondary">Trending Tv Movies To Watch Now</p>
     <div class="w-100 custom-border"></div>
   </div>
-  <div class="col-md-2" *ngFor="let tv of tvMovies;let i = index">
+  <a [routerLink]="['/moviedetails', tv.id]" class="col-md-2" *ngFor="let tv of tvMovies;let i = index">
     <div class="item position-relative">
       <img [src]="'https://image.tmdb.org/t/p/w500'+tv.poster_path"
         class="w-100" alt>
       <h3 class="h5 text-white mt-2"> {{tv.name}}</h3>
-      <span class="rating bg-info px-1 py-2 top-0 end-0 position-absolute">
+      <span class="rating bg-info px-1 py-2 top-0 end-0 position-absolute border rounded-circle">
         {{tv.vote_average}}
       </span>
     </div>
-  </div>
+  </a>
 </div>
 
 
