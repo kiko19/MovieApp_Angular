@@ -15,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
 import { TvseriesComponent } from './tvseries/tvseries.component';
 import { MoviesComponent } from './movies/movies.component';
-import { PeopleComponent } from './people/people.component'
+import { PeopleComponent } from './people/people.component';
+import { TvdetailsComponent } from './tvdetails/tvdetails.component'
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { PeopleComponent } from './people/people.component'
     MoviedetailsComponent,
     TvseriesComponent,
     MoviesComponent,
-    PeopleComponent
+    PeopleComponent,
+    TvdetailsComponent
   ],
   imports: [
     BrowserModule,

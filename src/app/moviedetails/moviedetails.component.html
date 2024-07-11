@@ -9,6 +9,9 @@
     <li *ngFor="let g of movieDetails.genres" class="text-decoration-none d-flex me-3 border p-1 rounded-3 " >{{g.name}}</li>
   </ul>
 
+  <h5 class="d-flex mt-4"> Vote : <p class=" ms-2"> {{movieDetails.vote_average}}</p></h5>
+  <h5 class="d-flex mt-2"> Release Date : <p class=" ms-2 fw-light"> {{movieDetails.release_date}}</p></h5>
+
   <h4 class="mt-3">The Story</h4>
   <div class="brdr w-25 mb-3 mt-2"></div>
   <h6 class="bg-dark p-3  rounded-3">{{movieDetails.overview}}</h6>

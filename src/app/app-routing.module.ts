@@ -1,3 +1,4 @@
+import { TvdetailsComponent } from './tvdetails/tvdetails.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: "movies", component: MoviesComponent },
   { path: "tvseries", component: TvseriesComponent },
   { path: "moviedetails/:id", component: MoviedetailsComponent },
+  { path: "tvdetails/:id", component: TvdetailsComponent },
   { path: "**", component: NotfoundComponent }
 ];
 

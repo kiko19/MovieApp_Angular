@@ -14,6 +14,9 @@ export class HomedataService {
   getMovieDetails(id:any): Observable<any> {
      return this._httpClient.get(`https://api.themoviedb.org/3/movie/${id}?api_key=08177ff4d4503cb2f11d397a6f366874`)
   }
+  getTvDetails(id:any): Observable<any> {
+     return this._httpClient.get(`https://api.themoviedb.org/3/tv/${id}?api_key=08177ff4d4503cb2f11d397a6f366874`)
+  }
 
 
 

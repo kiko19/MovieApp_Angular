@@ -1,1 +1,15 @@
-<p>tvseries works!</p>
+<div class="row align-items-center mb-5">
+  <div class="brdr w-100  mt-2"></div>
+  <h3 class="pt-4">Trending Movies To Watch Now </h3>
+  <p class="text-secondary mb-5">Trending Movies To Watch Now</p>
+  <a routerLink="/moviedetails" class="col-md-2 my-2" *ngFor="let movie of allTv;let i = index">
+    <div class="item position-relative">
+      <img [src]="'https://image.tmdb.org/t/p/w500'+movie.poster_path"
+        class="w-100" alt>
+      <h3 class="h5 text-white mt-2"> {{movie.title}}</h3>
+      <span class="rating bg-info px-1 py-2 top-0 end-0 position-absolute">
+        {{movie.vote_average}}
+      </span>
+    </div>
+  </a>
+</div>
