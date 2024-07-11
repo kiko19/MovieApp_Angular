@@ -2,3 +2,13 @@
   height: 2px;
   background-color: rgb(255, 255, 255);
 }
+.bt{
+background-color: transparent;
+transition: 500ms;
+}
+.bt:hover
+{
+  background-color: white !important;
+  scale: 1.05;
+  color: black !important;
+}
