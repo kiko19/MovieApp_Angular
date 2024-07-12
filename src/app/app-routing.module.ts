@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { MoviesComponent } from './movies/movies.component';
 import { TvseriesComponent } from './tvseries/tvseries.component';
 import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
+import { UpcomingComponent } from './upcoming/upcoming.component';
 
 const routes: Routes = [
   { path: "", redirectTo: 'home', pathMatch: "full" },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: "tvseries", component: TvseriesComponent },
   { path: "moviedetails/:id", component: MoviedetailsComponent },
   { path: "tvdetails/:id", component: TvdetailsComponent },
+  { path: "upcoming", component: UpcomingComponent },
   { path: "**", component: NotfoundComponent }
 ];
 

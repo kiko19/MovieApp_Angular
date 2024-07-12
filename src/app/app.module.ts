@@ -16,7 +16,8 @@ import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
 import { TvseriesComponent } from './tvseries/tvseries.component';
 import { MoviesComponent } from './movies/movies.component';
 import { PeopleComponent } from './people/people.component';
-import { TvdetailsComponent } from './tvdetails/tvdetails.component'
+import { TvdetailsComponent } from './tvdetails/tvdetails.component';
+import { UpcomingComponent } from './upcoming/upcoming.component'
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { TvdetailsComponent } from './tvdetails/tvdetails.component'
     TvseriesComponent,
     MoviesComponent,
     PeopleComponent,
-    TvdetailsComponent
+    TvdetailsComponent,
+    UpcomingComponent
   ],
   imports: [
     BrowserModule,
